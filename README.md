@@ -5,7 +5,7 @@ Bu proje HB teknik mülakatı için hazırlandı. Projenin amacı rover'ları is
 
 **NASIL KULLANILIR?**
 
-Projeyi build etmek yeterlidir. Açılan form'da gözüken test butonları kullanılarak test işlemi gerçekleştirilebilir.
+Projeyi build etmek yeterlidir. Açılan form'da gözüken test butonları kullanılarak görsel test işlemi gerçekleştirilebilir. Test projesi ile unit test'ler kontrol edilebilir.
 
 **TEKNİK BİLGİLER**
 
