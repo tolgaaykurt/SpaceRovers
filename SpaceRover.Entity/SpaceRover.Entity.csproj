@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{518AE1A9-B24C-4C58-ABEB-6AAE02B3C066}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SpaceRover.Entity</RootNamespace>
+    <AssemblyName>SpaceRover.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chains\Rover\TextCommand\ITextCommandHandler.cs" />
+    <Compile Include="Common\Enums.cs" />
+    <Compile Include="Controllers\Rover\RoverTextControllerResult.cs" />
+    <Compile Include="Observers\Rover\RoverObserver.cs" />
+    <Compile Include="Observers\Rover\SpaceRoverStatusChangeEventArgs.cs" />
+    <Compile Include="PlanetPlateau\PlateauModel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PlanetPlateau\SpaceRoversOnPlateau.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rover\Abstracts\IRoverDirectionState.cs" />
+    <Compile Include="Rover\Abstracts\IRoverMoveMessage.cs" />
+    <Compile Include="Rover\RoverMoveMessage.cs" />
+    <Compile Include="Rover\SpaceRoverModel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rover\SpaceRoverStatus.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
