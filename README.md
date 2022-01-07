@@ -13,3 +13,4 @@ Yön değişimlerini takip edebilmek için *State Pattern* kullanıldı. Rover'l
 
 Rover'ların hareketlerinin takip edilebilmesi için çıktılar Visual Studio output penceresine yazdırıldı. Rover hareketleri aynı zamanda ekranda görsel olarakta simüle edildi.
 
+![SpaceRover_Project_Demo](https://user-images.githubusercontent.com/10353442/148481267-d7bd6e08-eb1a-49cb-89a3-f8f6cb974b17.gif)
