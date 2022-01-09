@@ -1,7 +1,7 @@
 # SPACE ROVERs #
 **PROJE AÇIKLAMASI**
 
-Bu proje HB teknik mülakatı için hazırlandı. Projenin amacı rover'ları isterlere göre platoya indirmek, yönlerini değiştirmek ve platoda ilerletmek.
+Projenin amacı rover'ları platoya indirmek, yönlerini değiştirmek ve platoda kazasız ilerletmek.
 
 **NASIL KULLANILIR?**
 
